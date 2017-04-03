@@ -76,7 +76,7 @@ void multiply(num a, num b, num &ans){
 //        for (int k = 0; k < temp.size(); ++k) {
 //            cout<<temp[k];
 //        }cout<<endl;
-        add_long(temp, ans.value);//TODO
+        add_long(temp, ans.value);
 //        cout<<"now";
 //        for (int k = 0; k < ans.value.size(); ++k) {
 //            cout<<ans.value[k];
@@ -127,7 +127,6 @@ void add_long(vector<int> a, vector<int> &result){
 //    for (int i = 0; i <result.size(); ++i) {
 //        cout<<result[i];
 //    }cout<<endl;
-    //TODO
     vector<int> result_rev;
     sum digit_sum;
     int a_index, b_index, a_elt, b_elt;
