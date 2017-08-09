@@ -1,20 +1,16 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    float length;
-    float n = 0;
+    float total = 0;
     float now = 0;
-    while(cin>>length&&length != 0){
-        n = 2;
-        now = 0;
-        while(now < length){
-            now += 1/n;
-            n++;
-        }
-        printf("%d card(s)\n", int(n - 2));
+    for (int i = 0; i < 12; ++i) {
+        cin>>now;
+        total += now;
     }
+    cout<<"$" <<setprecision(2) <<fixed <<total / 12<<endl;
     return 0;
 }
